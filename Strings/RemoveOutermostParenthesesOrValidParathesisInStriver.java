@@ -27,6 +27,10 @@ public class RemoveOutermostParenthesesOrValidParathesisInStriver {
 
        //stack approach 
         StringBuilder resl=new StringBuilder();
+        //why using StringBuilder? 
+        /*A String in Java is immutable, meaning once it is created, its value cannot be changed.
+                If you try to modify a String (such as appending characters to it), Java creates a new String object every time you modify it.
+ */
          Stack<Character> stack=new Stack<>();
                  for (int i = 0; i < s.length(); i++) {
             char current = s.charAt(i);
